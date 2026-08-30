@@ -5,23 +5,28 @@
     <meta name="viewport" 
     content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>EcoTech</title>
   </head>
 
   <body>
     <header>
-      <img class="logo" src="imagem/logo .png" alt="Logo da EcoTech" />
-      <nav class="nomelogo">
-        <h1>EcoTech</h1>
-        <p>Tecnologia que cuida do futuro</p>
-      </nav>
-      <nav>
+      <div class="header-brand">
+        <img class="logo" src="imagem/logo .png" alt="Logo da EcoTech" />
+        <div class="nomelogo">
+          <h1>EcoTech</h1>
+          <p>Tecnologia que cuida do futuro</p>
+        </div>
+      </div>
+      <nav class="header-nav">
         <ul>
-          <li>Início</li>
-          <li>ODS 12</li>
-          <li>Resíduos</li>
-          <li>Como Ajudar</li>
-          <li>Consultas</li>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#ods12">ODS 12</a></li>
+          <li><a href="#residuos">Resíduos</a></li>
+          <li><a href="#ajuda">Como Ajudar</a></li>
+          <li><a href="#consulta">Consultas</a></li>
           <li>
             <button class="btnContato">
               Contato
@@ -31,42 +36,37 @@
       </nav> 
     </header>
 
-    <!-- Seção 1 -->
-    <section>
-      <img class="fundo" src="imagem/img-fundo.png" alt="Imagem da EcoTech">
+    <!-- Seção 01 -->
+    <section class="secao-hero" id="inicio">
+      <div class="hero-container">
         <div class="secao1">
-          <h2>
-            Tecnologia que cuida do futuro.
-          </h2>
+          <h2>Tecnologia<br>que cuida do futuro.</h2>
           <p> 
             Aprenda a reduzir, reutilizar e descartar 
             corretamente resíduos eletrônicos.  
           </p>
-          </div>
-            <button class="btnODS12">
-              Conheça o ODS12 <img class="navegacao" src="imagem/navegação.png"
-              alt="Seta de navegação">
-            </button>
+          <button class="btnODS12">
+            Conheça o ODS 12 <span class="arrow">→</span>
+          </button>
         </div>
-    </section>    
+        <div class="hero-image">
+          <img src="imagem/img-fundo.png" alt="Imagem da EcoTech">
+        </div>
+      </div>
+    </section>
 
-    <!-- Seção 2 -->
-     <section class="secao2">
-      <img class="img-ods12" src="imagem/ods-12.png" alt="Imagem do ODS 12">
-      <h2 >
-        ODS 12 — Consumo e Produção Responsáveis
-      </h2>
-      <p>
-        O ODS 12 busca garantir padrões de consumo e produção 
-        sustentáveis, reducindo o desperdício, incentivando a
-        eficiência no uso de recursos e promovendo práticas
-        responsáveis em toda a cadeia de produtiva.
-      </p>
-      <p>
-        No contexto tecnológico, isso envolve utilizar
-        equipamentos de forma consciente, prolongar sua vida 
-        útil e encaminhar corretamente os resíduos eletrônicos.
-      </p>
+    <!-- Seção ODS 12 -->
+     <section class="secao2" id="ods12">
+      <div class="ods-container">
+        <div class="ods-content">
+          <h2>Projeto alinhado ao</h2>
+          <h3>ODS 12 – Consumo e Produção Responsáveis</h3>
+          <p>Promovemos o uso consciente da tecnologia e ações sustentáveis para um mundo melhor.</p>
+        </div>
+        <div class="ods-badge">
+          <img class="img-ods12" src="imagem/ods-12.png" alt="Imagem do ODS 12">
+        </div>
+      </div>
       <img class="img-eco" src="imagem/img-eco.png" alt="Imagem de um ecossistema">
       <div class="divCards1">
         <div class="card">
