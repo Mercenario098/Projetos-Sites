@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" 
     content="width=device-width, initial-scale=1.0" />
+
+    <!-- css -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
     <title>EcoTech</title>
   </head>
 
@@ -28,7 +33,7 @@
           <li><a href="#ajuda">Como Ajudar</a></li>
           <li><a href="#consulta">Consultas</a></li>
           <li>
-            <button class="btnContato">
+            <button class="btnContato" type="button">
               Contato
             </button>
           </li>
@@ -45,7 +50,7 @@
             Aprenda a reduzir, reutilizar e descartar 
             corretamente resíduos eletrônicos.  
           </p>
-          <button class="btnODS12">
+          <button class="btnODS12" type="button">
             Conheça o ODS 12 <span class="arrow">→</span>
           </button>
         </div>
@@ -68,6 +73,34 @@
         </div>
       </div>
       <img class="img-eco" src="imagem/img-eco.png" alt="Imagem de um ecossistema">
+
+      <section class="ods-acao" aria-label="ODS 12 - Consumo e Produção Responsáveis">
+        <h2 class="ods-acao-title">ODS 12 – Consumo e Produção Responsáveis</h2>
+
+        <div class="ods-acao-layout">
+          <div>
+            <img  class="ods-badge-card" src="imagem/ods-12.png" alt="Imagem do ODS 12">
+          </div>
+
+          <div class="ods-acao-copy">
+            <p>
+              O ODS 12 busca garantir padrões de consumo e produção sustentáveis,
+              reduzindo o desperdício, incentivando a eficiência no uso de recursos e
+              promovendo práticas responsáveis ao longo de toda a cadeia produtiva.
+            </p>
+            <p>
+              No contexto tecnológico, isso envolve utilizar equipamentos de forma
+              consciente, prolongar sua vida útil e realizar o descarte correto dos
+              resíduos eletrônicos.
+            </p>
+          </div>
+
+          <div>
+            <img class="ods-eco-illustration" src="imagem/img-eco.png" alt="Ilustração de um ecossistema sustentável">
+          </div>
+        </div>
+      </section>
+
       <div class="divCards1">
         <div class="card">
           <img src="imagem/reduzir2.png" 
@@ -90,8 +123,8 @@
       </div>
 
       <!-- Cards Resíduos -->
-       <h2>Resíduos Eletrônicos</h2>
-       <p>
+       <h2 class="titulo-residuos" id="residuos">Resíduos Eletrônicos</h2>
+       <p class="descricao-residuos">
         Alguns materiais tecnológicos precisam
           de atenção especial no descarte.
         </p>
@@ -140,7 +173,7 @@
       </div>
       
       <!-- Cards Ajuda -->
-       <div class="divCards3">
+       <div class="divCards3" id="ajuda">
         <div class="card">
           <img src="imagem/reduzir.png" 
           alt="Imagem de redução de resíduos">
@@ -175,5 +208,86 @@
       </div>
 
      </section>
+
+    <!-- Consulta de resíduos -->
+    <section class="consulta-section" id="consulta" aria-labelledby="consulta-title">
+      <div class="consulta-illustration" aria-hidden="true">
+        <img src="imagem/img-fundo.png" alt="Ilustração de consulta de resíduos" />
+      </div>
+
+      <div class="consulta-content">
+        <h2 id="consulta-title">Consulte um resíduo</h2>
+        <p>Digite o nome do material para consultar informações<br>sobre o descarte correto.</p>
+        <form class="consulta-form">
+          <label class="sr-only" for="residuo">Nome do material</label>
+          <input id="residuo" type="search" autocomplete="off" placeholder="Ex.: celular, bateria, notebook..." />
+          <button type="submit">Consultar</button>
+        </form>
+        <small class="consulta-status" role="status" aria-live="polite">Consulte materiais como celular, bateria ou carregador.</small>
+      </div>
+
+      <div class="consulta-exemplos">
+        <h3>Exemplo de materiais</h3>
+        <ul>
+          <li><button type="button" data-residuo="celular">Celular</button></li>
+          <li><button type="button" data-residuo="computador">Computador</button></li>
+          <li><button type="button" data-residuo="bateria">Bateria</button></li>
+          <li><button type="button" data-residuo="carregador">Carregador</button></li>
+          <li><button type="button" data-residuo="pilha">Pilha</button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section footer-about">
+          <div class="footer-brand">
+            <img class="footer-logo" src="imagem/logo .png" alt="Logo da EcoTech" />
+            <h3>EcoTech</h3>
+          </div>
+          <p>
+            Projeto desenvolvido para promover 
+            consumo e produção responsáveis, 
+            incentivando atitudes sustentáveis 
+            no uso da tecnologia.
+          </p>
+        </div>
+
+        <div class="footer-section footer-nav">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#ods12">ODS 12</a></li>
+            <li><a href="#residuos">Resíduos</a></li>
+            <li><a href="#ajuda">Como ajudar</a></li>
+            <li><a href="#consulta">Consulta</a></li>
+            <li><a href="#consulta">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section footer-ods">
+          <h4>ODS Trabalhado</h4>
+          <img src="imagem/ods-12.png" alt="ODS 12 - Consumo e Produção Responsáveis" class="footer-ods-badge">
+        </div>
+
+        <div class="footer-section footer-integrantes">
+          <h4>Integrantes</h4>
+          <ul>
+            <li>Lucas Azevedo Caldas</li>
+            <li>Marinélia Araújo Costa</li>
+            <li>Polyana Carreira Fonseca</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 EcoTech - Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>
